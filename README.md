@@ -6,16 +6,16 @@ The input data to the quality control module will be multifold.
 
 The first will be a .csv with headers describing the questions in the "upvote" HIT, and columns with the worker IDs and corresponding responses for each of the questions. The upvote HIT will essentially present the worker with a submitted tourist location and ask the worker to judge the location as good or bad. If they've never heard of it they are asked to research it.
 For example:
-WorkerID     | Which best represents your relation to the destination| Do you recommend visiting? | Why?          |
------------- | ----------------------------------------------------- |----------------------------| ------------- |
-IOJFOIJIFJWE | Never been there                                      | No                         | It smells bad.        |
-ZXCIGEWQU@!# | I haven't been there, but have heard of it            | Yes                        | Smells good.          |
+WorkerID     | Destination | Which best represents your relation to the destination| Do you recommend visiting? | Why?          |
+------------ | ---------------- | ----------------------------------------------------- |----------------------------| ------------- |
+IOJFOIJIFJWE | Porta-potty on 1st street near Boston   | Never been there                                      | No                         | It smells bad.        |
+ZXCIGEWQU@!# | Porta-potty on 1st street near Boston | I haven't been there, but have heard of it            | Yes                        | Smells good.          |
 
 The second input data to the quality control module will be a .csv with headers describing the questions in the HIT, and columns with the worker IDs and corresponding responses for each of the questions. For example:
-WorkerID     | City          | etc.
------------- | ------------- |----
-IOJFOIJIFJWE | Mumbai        | ...
-ZXCIGEWQU@!# | Boston        | ...
+WorkerID     | City          |What destination in your area do you recommend?|
+------------ | ------------- |-----------------------------------------------|
+IOJFOIJIFJWE | Mumbai        |Elephanta caves|
+ZXCIGEWQU@!# | Boston        |Porta-potty on 1st street|
 
 The quality control module then appends columns to the .csv, one column describing number of workers who recommended, and the other describing the number of workers that recommended against it, and outputs that .csv.
 
