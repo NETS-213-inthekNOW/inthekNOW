@@ -1,5 +1,23 @@
 # inthekNOW
 
+### Data Format
+
+The input data to the quality control module will be a .csv with headers describing the questions in the HIT, and columns with the worker IDs and corresponding responses for each of the questions. For example:
+WorkerID     | City          | etc.
+------------ | ------------- |----
+IOJFOIJIFJWE | Mumbai        | ...
+ZXCIGEWQU@!# | Boston        | ...
+
+The input data to the aggregation module will be analogous, since the quality control module only serves to cull workers that are clearly bad actors. 
+
+### Code Design
+
+The quality control module's current design is to simply (????) <- fill in 
+
+The aggregation module's current design is to conglomerate responses that name the same tourist destination, if any. Then, (????) <- fill in 
+
+### Project Components Breakdown
+
 Phase 1: Gather Raw Data/Forming the Experiment (2 points)
 - Forming github repo/organization, creating HIT design/questions, finalizing project details such as the name
 
