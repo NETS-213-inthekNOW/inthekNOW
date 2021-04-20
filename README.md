@@ -23,7 +23,7 @@ The aggregation module input then takes in that .csv and uses the EM algorithm u
 
 ### Code Design
 
-The quality control module's current design is to simply (????) <- fill in 
+The quality control module's current design is to simply take in the input .csv, and using pandas, count the number of affirmative and negative answers for and against visiting each location, and then tally the results in a new column. Workers who have visited the place before have their votes more heavily weighted. (? From what I can see from the code? update if otherwise - es)
 
 The aggregation module's current design is to  (????) <- fill in 
 
