@@ -23,7 +23,7 @@ The aggregation module input then takes in that .csv and uses the EM algorithm u
 
 ### Code Design
 
-The quality control module's current design is to simply take in the input .csv, and using pandas, count the number of affirmative and negative answers for and against visiting each location, and then tally the results in a new column. Workers who have visited the place before have their votes more heavily weighted. (? From what I can see from the code? update if otherwise - es)
+The quality control module's current design is to simply take in the input .csv, and using pandas, count the number of affirmative and negative answers, forming a weighted majority vote/decision. In upvoting, since responses specified if the worker actually went to the destination or not, we weighed votes according to that (if a person recommended the destination and also personally visited there, then there vote/recommendation held more weight than another from a user that did not actually go there). Our code outputs a csv file that has two columns: one for the destination, and one for if the destination passed the designated threshhold of recommendations.
 
 The aggregation module's current design is to  (????) <- fill in 
 
