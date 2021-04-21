@@ -1,5 +1,7 @@
 # inthekNOW
 
+Repo format: data/ directory contains .csv that acts as sample i/o for the modules/code, which are listed in the src/ directory. The .pdfs generally elaborate on the details of the HIT that will generate corresponding .csvs.
+
 ### Data Format
 
 The input data to the quality control module will be multifold.
