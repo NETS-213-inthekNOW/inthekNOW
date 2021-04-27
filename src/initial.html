@@ -1,0 +1,86 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<script>
+  function boxChecked() {
+    const radioGroups = document.querySelectorAll("crowd-radio-group");
+    let valid = true;
+    for (let radioGroup of radioGroups) {
+      let validGroup = false;
+      let radioButtons = radioGroup.children;
+      for (let radioButton of radioButtons) {
+        validGroup = validGroup || radioButton.checked;
+      }
+      valid = valid && validGroup;
+    }
+    return valid;
+  }
+
+  //from https://stackoverflow.com/questions/54266891/submission-validation-with-the-crowd-template-on-mturk
+  window.onload = function() {
+    document.querySelector('crowd-form').onsubmit = function(e) {
+      if (!boxChecked()) {
+        alert("Please answer all the questions before submitting.");
+        e.preventDefault();
+      }
+    }
+  }
+</script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+  <short-instructions>
+  	<p>Read the questions carefully and answer them accordingly.</p>
+  	<p>See detailed training video here: ________________</p>
+  </short-instructions>
+
+  <div>
+    <p>What city do you live in?</p>
+    <crowd-input name="q1-worker-city" placeholder="Example: New York City" required></crowd-input>
+  </div>
+
+  <div>
+    <p>What is a hidden gem (an overlooked tourist attraction/restaurant) in your city/local area? </p>
+    <crowd-input name="q2-hidden-gem" placeholder="Example: Brooklyn Night Bazaar" required></crowd-input>
+  </div>
+
+    <div>
+    <p>Please insert a Google Maps link to the location below: </p>
+    <crowd-input label="Time" name="q3-google-maps-url" placeholder="Example: https://www.google.com/maps/place/The+White+House/@38.9010276,-77.0526189,15z/..." required></crowd-input>
+  </div>
+
+ <div class = "location-boxes required">
+    <p>What type of location is this?</p>
+    <crowd-radio-group>
+    <crowd-radio-button name="q4-natural"               value="nature">Natural/wilderness reserve or area</crowd-radio-button>
+    <br/><crowd-radio-button name="q4-food-place"            value="food">Food place</crowd-radio-button>
+    <br/><crowd-radio-button name="q4-waterfront"            value="waterfront">Waterfront Area</crowd-radio-button>
+    <br/><crowd-radio-button name="q4-entertainment-center"  value="entertainment">Entertainment center (music venue, sports arena, etc.)</crowd-radio-button>
+    <br/><crowd-radio-button name="q4-cultural-site"         value="culture">Cultural/heritage site</crowd-radio-button>
+    <br/><crowd-radio-button name="q4-museum"                value="museum">Museum</crowd-radio-button>
+    <br/><crowd-radio-button name="q4-historical-landmark"   value="historical-landmark">Historical Landmark</crowd-radio-button>
+    <br/><crowd-radio-button name="q4-specialty-store"       value="store">Specialty Store</crowd-radio-button>
+    <br/><crowd-radio-button name="q4-other"                 value="other">Other</crowd-radio-button>
+    </crowd-radio-group>
+  </div>
+
+  <div>
+    <p>Best time to visit?</p>
+    <crowd-input label="Time" name="q5-time-to-visit" placeholder="Example: Evening, summer, etc. " required></crowd-input>
+  </div>
+
+  <div>
+    <p>Please provide a description of why you recommend this hidden gem. (Minimum 30 characters)</p>
+    <crowd-input label="Description" min-length="30" name="q6-why-visit" required></crowd-input>
+  </div>
+
+  <div>
+    <p>Please select how popular this location is on a scale of 1-10. (Slide to select a number)</p>
+    <crowd-slider name="q7-popularity" min="1" max="10" step="1" pin="true" required></crowd-slider>
+  </div>
+
+
+</crowd-form>
