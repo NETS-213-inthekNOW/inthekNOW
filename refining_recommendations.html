@@ -32,17 +32,17 @@ to deduct points if necessary. If total points reaches 0 or below, rate the desc
 </fieldset>
 
 <fieldset><label>1. Is this location a ${location_label}?</label>
-<div class="radio"><label><input name="Q1Answer" type="radio" value="Yes_Label" />Yes</label></div> 
+<div class="radio"><label><input name="Q1Answer" type="radio" value="Yes_Label" required/>Yes</label></div> 
 <div class="radio"><label><input name="Q1Answer" type="radio" value="No_Label" />No</label></div>
 </fieldset>
 
 <fieldset><label>2. Does the following link lead to the Google Maps location of the location described above? <a href="${location_link}" target="_blank">${location_link}</a></label>
-<div class="radio"><label><input name="Q2Answer" type="radio" value="Yes_Link" />Yes</label></div> 
+<div class="radio"><label><input name="Q2Answer" type="radio" value="Yes_Link" required/>Yes</label></div> 
 <div class="radio"><label><input name="Q2Answer" type="radio" value="No_Link" />No</label></div>
 </fieldset>
 
 <fieldset><label>3. Is this location in ${wrong_location}?</label>
-<div class="radio"><label><input name="Q3ControlAnswer" type="radio" value="Yes_NegControl" />Yes</label></div> 
+<div class="radio"><label><input name="Q3ControlAnswer" type="radio" value="Yes_NegControl" required/>Yes</label></div> 
 <div class="radio"><label><input name="Q3ControlAnswer" type="radio" value="No_NegControl" />No</label></div>
 </fieldset>
 
