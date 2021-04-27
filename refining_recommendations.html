@@ -1,0 +1,113 @@
+<!-- Bootstrap v3.0.3 -->
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.142.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">
+<div class="row col-xs-12 col-md-12">
+
+<!-- Instructions -->
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Instructions</strong></div> 
+<div class="panel-body">
+<p><b>We have listed a location which is a tourist destination or eatery in your state. Please answer questions related to this location.</b></p>
+<p>The final two questions are related to descriptions of this location. Initially rate the description with 10 points. Then, use the following scoring criteria 
+to deduct points if necessary. If total points reaches 0 or below, rate the description with a score of 0.</p>
+<h1 style="font-family: Verdana, Geneva, sans-serif; color:red; font-size:1em;"><b>Your HIT may be rejected if you do not follow these criteria.</b></h1>
+<ul>
+<!-- We are adding a template variable below which we will replace with an actual link in our code later -->
+<li>Initially, rate the description 10 points.</a></li>
+<li>Deduct 8 points if the description is irrelevant or does not describe the location.</li>
+<li>Deduct 2 points if the description contains an incomplete sentence.</li>
+<li>Deduct 1 point for each grammatical error.</li>
+<li>Deduct 1 point for each spelling error.</li>
+</ul>
+</div>
+</div>
+<!-- End Instructions -->
+
+<!-- Content Body -->
+<section>
+
+<fieldset><label>1. Is this location a ${location_label}?</label>
+<div class="radio"><label><input name="Q1Answer" type="radio" value="Yes_Label" />Yes</label></div> 
+<div class="radio"><label><input name="Q1Answer" type="radio" value="No_Label" />No</label></div>
+</fieldset>
+
+<fieldset><label>2. Does the following link lead to the Google Maps location of the location described above? <a href="${location_link}" target="_blank">${location_link}</a></label>
+<div class="radio"><label><input name="Q2Answer" type="radio" value="Yes_Link" />Yes</label></div> 
+<div class="radio"><label><input name="Q2Answer" type="radio" value="No_Link" />No</label></div>
+</fieldset>
+
+<fieldset><label>3. Is this location in Mexico?</label>
+<div class="radio"><label><input name="Q3ControlAnswer" type="radio" value="Yes_NegControl" />Yes</label></div> 
+<div class="radio"><label><input name="Q3ControlAnswer" type="radio" value="No_NegControl" />No</label></div>
+</fieldset>
+
+<fieldset><label>4. Please rate the quality of the following description on a scale of 0-10 using the provided scoring criteria. (Slide to select a number)</label>
+<div class="Q4Slider">
+  <p>${control_description}</p>
+  <input name="Q4ControlSlider" type="range" min="0" max="10" step="1" value="5" class="slider" id="myRange">
+  <p style="text-align:center"><span style="float:left">0</span><span style="float:right">10</span><span>5</span></p>
+</div>
+</fieldset>
+
+<fieldset><label>5. Please rate the quality of the following description on a scale of 0-10 using the provided scoring criteria. (Slide to select a number)</label>
+<div class="Q5Slider">
+  <p>${description}</p>
+  <input name="Q5Slider" type="range" min="0" max="10" step="1" value="5" class="slider" id="myRange">
+  <p style="text-align:center"><span style="float:left">0</span><span style="float:right">10</span><span>5</span></p>
+</div>
+</fieldset>
+
+</section>
+<!-- End Content Body -->
+
+</div>
+</section>
+<!-- close container -->
+
+<!-- Start Slider CSS -->
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #548AC5;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #548AC5;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<!-- End Slider CSS -->
+
+<style type="text/css">fieldset { padding: 10px; background:#fbfbfb; border-radius:5px; margin-bottom:5px; }</style>
