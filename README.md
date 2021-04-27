@@ -46,4 +46,4 @@ Phase 4: Refining (4 points)
 - Write HIT html/css/AWS/relevant items so that the crowd can iteratively improve the set of information it has been given.
 
 Phase 5: Form the website (4 points)
-- Write all code needed for the website to present aall information. 
+- Write all code needed for the website to present all information. 
