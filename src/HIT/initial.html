@@ -1,6 +1,30 @@
 <!-- You must include this JavaScript file -->
 <script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
-<script src="form-validation.js"></script>
+<script>
+  function boxChecked() {
+    const radioGroups = document.querySelectorAll("crowd-radio-group");
+    let valid = true;
+    for (let radioGroup of radioGroups) {
+      let validGroup = false;
+      let radioButtons = radioGroup.children;
+      for (let radioButton of radioButtons) {
+        validGroup = validGroup || radioButton.checked;
+      }
+      valid = valid && validGroup;
+    }
+    return valid;
+  }
+
+  //from https://stackoverflow.com/questions/54266891/submission-validation-with-the-crowd-template-on-mturk
+  window.onload = function() {
+    document.querySelector('crowd-form').onsubmit = function(e) {
+      if (!boxChecked()) {
+        alert("Please answer all the questions before submitting.");
+        e.preventDefault();
+      }
+    }
+  }
+</script>
 
 <!-- For the full list of available Crowd HTML Elements and their input/output documentation,
       please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
@@ -8,12 +32,10 @@
 <!-- You must include crowd-form so that your task submits answers to MTurk -->
 <crowd-form answer-format="flatten-objects">
 
-  <crowd-instructions link-text="View instructions" link-type="button">
-    <short-summary>
-      <p>Complete this short survey for a $0.10 reward.
-         See detailed training video here: ________________ </p>
-    </short-summary>
-  </crowd-instructions>
+  <short-instructions>
+  	<p>Read the questions carefully and answer them accordingly.</p>
+  	<p>See detailed training video here: ________________</p>
+  </short-instructions>
 
   <div>
     <p>What city do you live in?</p>
