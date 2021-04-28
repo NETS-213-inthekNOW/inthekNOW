@@ -27,7 +27,9 @@ The aggregation module input then takes in that .csv and uses the EM algorithm u
 
 The quality control module's current design is to simply take in the input .csv, and using pandas, count the number of affirmative and negative answers, forming a weighted majority vote/decision. In upvoting, since responses specified if the worker actually went to the destination or not, we separated vote counts based on these factors. Our output has four columns: one for users who went to the destination and recommended it, one for users who did not go to the destination and recommended it, one for users who did not recommend the destination and did go there, and one for users who did not go to the destination and also did not recomment it. 'qc_sample_input.csv' is an example csv file we ran through our code, and 'new_destinations.csv' is our output.
 
-The aggregation module's current design is to  (????) <- fill in 
+The aggregation module's current design is to utilize the EM algorithm (to change following staff meeting).
+
+The design of src/initial.html is a very simple HTML that utilizes Amazon's crowd HTML to build a simple survey-form task. The data will be used as input to the output survey, the details of which are detailed in the pdfs in the data directory. 
 
 ### Project Components Breakdown
 
