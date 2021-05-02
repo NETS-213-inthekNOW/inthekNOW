@@ -1,3 +1,28 @@
+<style>
+    .instructions {
+        border-style: solid;
+        border-color: #d1d1e0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    div {
+  padding-left: 20px;
+  padding-right: 20px;
+    }
+</style>
+
+<!-- Instructions -->
+<div class = "instructions">
+<p><strong>Instructions</strong></p> 
+<p>Please read the questions and answer them carefully. You must provide an answer for every question.</p>
+<h1 style="color:red; font-size: 0.9em"><b>We are looking for 'hidden gems' in particular. 
+Your HIT may be rejected if the location is extremely well known, such as the Statue of Liberty.</b></h1>
+<p>A 'hidden gem' is defined as an appealing or interesting location which not many people may know about.</p>
+</div>
+<br>
+<!-- End Instructions -->
+
 <!-- You must include this JavaScript file -->
 <script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
 <script>
@@ -26,35 +51,32 @@
   }
 </script>
 
+
 <!-- For the full list of available Crowd HTML Elements and their input/output documentation,
       please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
 
 <!-- You must include crowd-form so that your task submits answers to MTurk -->
 <crowd-form answer-format="flatten-objects">
 
-  <short-instructions>
-  	<p>Read the questions and answer them carefully. You must provide an answer for every question.</p>
-  	<br/>
-  	<p>Survey ID: ${HIT_ID}. Ignore this line if you are a Mechanical Turk worker.</p>
-  </short-instructions>
+  
 
   <div>
-    <p>What city do you live in?</p>
-    <crowd-input name="q1-worker-city" placeholder="Example: New York City" required></crowd-input>
+    <p>1. What city do you live in?</p>
+    <crowd-input name="q1-worker-city" placeholder="Example: Austin" required></crowd-input>
   </div>
 
   <div>
-    <p>What is a hidden gem (an overlooked tourist attraction/restaurant) in your city/local area? </p>
-    <crowd-input name="q2-hidden-gem" placeholder="Example: Brooklyn Night Bazaar" required></crowd-input>
+    <p>2. What is a hidden gem (an overlooked tourist attraction/restaurant) in your city/local area? </p>
+    <crowd-input name="q2-hidden-gem" placeholder="Example: Chihuahuan Desert Gardens" required></crowd-input>
   </div>
 
     <div>
-    <p>Please insert a Google Maps link to the location below: </p>
-    <crowd-input label="Time" name="q3-google-maps-url" placeholder="Example: https://www.google.com/maps/place/The+White+House/@38.9010276,-77.0526189,15z/..." required></crowd-input>
+    <p>3. Please insert a Google Maps link to the location below: </p>
+    <crowd-input name="q3-google-maps-url" placeholder="Example: https://www.google.com/maps/place/Twin+Falls/@30.244939,-97.809824,15z/..." required></crowd-input>
   </div>
 
  <div class = "location-boxes required">
-    <p>What type of location is this?</p>
+    <p>4. What type of location is this?</p>
     <crowd-radio-group>
     <crowd-radio-button name="q4-natural"               value="nature">Natural/wilderness reserve or area</crowd-radio-button>
     <br/><crowd-radio-button name="q4-food-place"            value="food">Food place (restaurants, bars, street shops, etc.)</crowd-radio-button>
@@ -69,25 +91,42 @@
   </div>
 
   <div>
-    <p>Best time to visit?</p>
-    <crowd-input label="Time" name="q5-time-to-visit" placeholder="Example: Evening, summer, etc. " required></crowd-input>
+    <p>5. Best time to visit?</p>
+    <crowd-radio-group>
+    <crowd-radio-button name="q5-morning"               value="morning">Morning</crowd-radio-button>
+    <br/><crowd-radio-button name="q5-afternoon"            value="afternoon">Afternoon</crowd-radio-button>
+    <br/><crowd-radio-button name="q5-evening"            value="evening">Evening</crowd-radio-button>
+    <br/><crowd-radio-button name="q5-anytime"            value="anytime">Not applicable i.e. Any time of the day</crowd-radio-button>
+    </crowd-radio-group>
+  </div>
+  
+  <div>
+    <p>6. Best season to visit?</p>
+    <crowd-radio-group>
+    <crowd-radio-button name="q6-Spring"               value="spring">Spring</crowd-radio-button>
+    <br/><crowd-radio-button name="q6-summer"            value="summer">Summer</crowd-radio-button>
+    <br/><crowd-radio-button name="q6-fall"            value="fall">Fall</crowd-radio-button>
+    <br/><crowd-radio-button name="q6-winter"            value="winter">Winter</crowd-radio-button>
+    <br/><crowd-radio-button name="q6-other"            value="other">Other or unsure</crowd-radio-button>
+    </crowd-radio-group>
   </div>
 
   <div>
-    <p>Please provide a description of why you recommend this hidden gem. (Minimum 30 characters)</p>
-    <crowd-input label="Description" min-length="30" name="q6-why-visit" required></crowd-input>
+    <p>7. Please provide a description of why you recommend this hidden gem. (Minimum 30 characters)</p>
+    <crowd-input min-length="30" name="q7-why-visit" required></crowd-input>
   </div>
 
   <div>
-    <p>Please select how popular this location is on a scale of 1-10. (Slide to select a number)</p>
+    <p>8. Please select how popular this location is on a scale of 1-10. (Slide to select a number)</p>
     <p>Consider 1 to be unpopular (completely unknown), 10 to be popular (Statue of Liberty).</p>
-    <crowd-slider name="q7-popularity" min="1" max="10" step="1" pin="true" required></crowd-slider>
+    <crowd-slider name="q8-popularity" min="1" max="10" step="1" pin="true" required></crowd-slider>
   </div>
 
   <div>
-    <p>Please check the box below before you submit.</p>
+    <p>9. Please check the box below before you submit.</p>
 	<crowd-checkbox name="Validation" value="check"> Yes </crowd-checkbox>
   </div>
-
+    
+  <br>
 
 </crowd-form>
