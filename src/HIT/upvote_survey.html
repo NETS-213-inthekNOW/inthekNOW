@@ -9,7 +9,9 @@
 <div class="panel panel-primary">
 <div class="panel-heading"><strong>Instructions</strong></div> 
 <div class="panel-body">
-<p><b>We have listed a location which is a tourist destination or eatery in your state. Please answer questions related to this location.</b></p>
+<p><b>We have listed a location which is a tourist destination, attraction, or eatery in your state. Please answer questions related to this location.</b></p>
+<p><b>Location:</b> ${location_label}</p>
+<p><b>Location Description:</b> ${location_description}</p>
 </div>
 </div>
 <!-- End Instructions -->
@@ -19,31 +21,25 @@
 
  
 <fieldset><label>1. Have you been to ${location_label}?</label>
-<div class="radio"><label><input name="Q1Answer" type="radio" value="Yes_Label" />Yes, I have been there</label></div> 
-<div class="radio"><label><input name="Q1Answer" type="radio" value="No_Heard_Label" />No, but I have heard of the location</label></div>
-<div class="radio"><label><input name="Q1Answer" type="radio" value="No_Unheard_Label" />No, and I have not heard of the location</label></div>
+<div class="radio"><label><input name="Q1Answer" type="radio" value="Yes_Visited" />Yes, I have been there</label></div> 
+<div class="radio"><label><input name="Q1Answer" type="radio" value="No_Not_Visited" />No, but I have heard of the location</label></div>
+<div class="radio"><label><input name="Q1Answer" type="radio" value="No_Unheard" />No, and I have not heard of the location</label></div>
 </fieldset>
  
-<fieldset><label>2. What is your favorite type of location to visit? (Select all that apply)</label>
-<div class="checkbox"><label><input name="Q2Answer" type="checkbox" value="natural" />Natural settings (parks, wildlife areas, etc.)</label></div> 
-<div class="checkbox"><label><input name="Q2Answer" type="checkbox" value="food" />Food places (restaurants, bars, street shops, etc.)</label></div>
-<div class="checkbox"><label><input name="Q2Answer" type="checkbox" value="waterfront" />Waterfront Areas</label></div>
-<div class="checkbox"><label><input name="Q2Answer" type="checkbox" value="entertainment" />Entertainment Centers (music venue, sports arena, theaters, etc.)</label></div>
-<div class="checkbox"><label><input name="Q2Answer" type="checkbox" value="culture" />Cultural/Historical Sites (heritage sites, cultural/historical landmarks, etc.)</label></div>
-<div class="checkbox"><label><input name="Q2Answer" type="checkbox" value="museum" />Museums</label></div>
-<div class="checkbox"><label><input name="Q2Answer" type="checkbox" value="store" />Stores/Shopping Centers</label></div>
-<div class="checkbox"><label><input name="Q2Answer" type="checkbox" value="other" />Other</label></div>
+<fieldset><label>2. This location is classified as a '${location_type}' location. Do you usually like visiting ${location_type} locations?</label>
+<div class="radio"><label><input name="Q2Answer" type="radio" value="Yes_Like" />Yes. I like ${location_type} locations.</label></div> 
+<div class="radio"><label><input name="Q2Answer" type="radio" value="No_Dont_Like" />No. I do not like ${location_type} locations.</label></div>
 </fieldset>
 
-<fieldset><label>3. Select both Yes and No if you are paying attention</label>
-<div class="checkbox"><label><input name="Q3Answer" type="checkbox" value="yes" />Yes</label></div> 
-<div class="checkbox"><label><input name="Q3Answer" type="checkbox" value="no" />No</label></div> 
-<div class="checkbox"><label><input name="Q3Answer" type="checkbox" value="idk" />I don't know</label></div> 
+<fieldset><label>3. Is this location located in ${random_country}?</label>
+<div class="radio"><label><input name="Q3Answer" type="radio" value="Validate_Yes" />Yes</label></div> 
+<div class="radio"><label><input name="Q3Answer" type="radio" value="Validate_No" />No</label></div>
+<div class="radio"><label><input name="Q3Answer" type="radio" value="Validate_Maybe" />Maybe</label></div>
 </fieldset>
 
-<fieldset><label>4. If you have never heard of the location, please research it online. Would you recommend ${location_label} as a good destination for a tourist to visit?</label>
-<div class="radio"><label><input name="Q7Answer" type="radio" value="Yes_Label" />Yes</label></div> 
-<div class="radio"><label><input name="Q7Answer" type="radio" value="No_Label" />No</label></div>
+<fieldset><label>4. If you have never heard of the location, please research it online. Would you recommend ${location_label} as a good place for a tourist to visit?</label>
+<div class="radio"><label><input name="Q4Answer" type="radio" value="Reccomend" />Yes</label></div> 
+<div class="radio"><label><input name="Q4Answer" type="radio" value="Not_Reccomend" />No</label></div>
 </fieldset>
 
 <!-- End Content Body -->
