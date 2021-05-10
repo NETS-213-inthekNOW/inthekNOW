@@ -1,0 +1,84 @@
+<!-- Bootstrap v3.0.3 -->
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.142.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">
+<div class="row col-xs-12 col-md-12">
+
+<!-- Instructions -->
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Instructions</strong></div> 
+<div class="panel-body">
+<p><b>We have listed a location which is a tourist destination, attration, or eatery in the US. Please select the BEST description. You can google search 
+the location if the location name does not indicate what type of location it is.</b></p>
+</div>
+</div>
+<!-- End Instructions -->
+
+<!-- Content Body -->
+<section>
+  
+<fieldset><label>Location: ${location}</label>
+</fieldset>
+
+<fieldset><label>Please select the description which you think best describes the location and is the most grammatically correct.</label>
+<div class="radio"><label><input name="Answer" type="radio" value="qc1" />${control1}</label></div>
+<div class="radio"><label><input name="Answer" type="radio" value="d1" required/>${description1}</label></div> 
+<div class="radio"><label><input name="Answer" type="radio" value="d2" required/>${description2}</label></div> 
+<div class="radio"><label><input name="Answer" type="radio" value="qc2" />${control2}</label></div>
+<div class="radio"><label><input name="Answer" type="radio" value="d3" />${description3}</label></div>
+</fieldset>
+
+
+</section>
+<!-- End Content Body -->
+
+</div>
+</section>
+<!-- close container -->
+
+<!-- Start Slider CSS -->
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #548AC5;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #548AC5;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<!-- End Slider CSS -->
+
+<style type="text/css">fieldset { padding: 10px; background:#fbfbfb; border-radius:5px; margin-bottom:5px; }</style>
