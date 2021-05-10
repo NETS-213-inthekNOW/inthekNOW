@@ -12,23 +12,14 @@ import numpy
 two_d = pd.read_csv('comparison_2_descriptions.csv')
 two_d = two_d[['Input.location', 'Input.description1', 'Input.description2', 'Answer.Answer']]
 
-two_d.head(30)
-
-two_d.shape[0]
-
 two_d = two_d[~two_d['Answer.Answer'].str.contains("qc1")]
 
-two_d.shape[0]
-
 two_d = two_d[~two_d['Answer.Answer'].str.contains("qc2")]
-
-two_d.shape[0]
 
 d = {'Locations': [], 'd1': [], 'd2': []}
 d_count = pd.DataFrame(data=d)
 d_count.Locations = two_d['Input.location'].copy()
 d_count = d_count.drop_duplicates().reset_index(drop=True).fillna(0)
-d_count.head()
 
 def update_label_count(x) :
   d_count.loc[d_count.Locations == x, "d1"] = len(
@@ -46,7 +37,6 @@ d_count['best_description_label'] = d_count.eq(d_count.max(1), axis=0).dot(d_cou
 d_count['best_description_label'] = d_count['best_description_label'].apply(lambda x: x if valid_d(x) else "d1")
 
 d_count['best_description'] = ""
-d_count.head()
 
 d2 = {'Locations': [], 'd1': [], 'd2': []}
 just_descriptions = pd.DataFrame(data=d2)
@@ -54,7 +44,6 @@ just_descriptions.Locations = two_d['Input.location'].copy()
 just_descriptions.d1 = two_d['Input.description1'].copy()
 just_descriptions.d2 = two_d['Input.description2'].copy()
 just_descriptions = just_descriptions.drop_duplicates().reset_index(drop=True)
-just_descriptions.head(10)
 
 def get_description(x):
   if d_count.iloc[(d_count.Locations[d_count.Locations == x].index.tolist())[0]]['best_description_label'] == "d1" : 
@@ -64,7 +53,6 @@ def get_description(x):
     d_count.loc[d_count.Locations == x, "best_description"] = just_descriptions.iloc[(just_descriptions.Locations[just_descriptions.Locations == x].index.tolist())[0]]['d2']
 
 d_count.Locations.apply(lambda x: get_description(x))
-d_count.head(10)
 
 d3 = {'Location': [], 'best_description': []}
 final_df = pd.DataFrame(data=d3)
