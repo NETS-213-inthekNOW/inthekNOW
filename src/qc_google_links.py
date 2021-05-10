@@ -46,9 +46,9 @@ def main():
   only_long_links = only_google[only_google['Link'].map(len) > 30]
   # drop duplicates
   prefinal_output = only_long_links.drop_duplicates().reset_index(drop=True).fillna(0)
-  final_output = prefinal_output.drop_duplicates(subset='Link', keep="first")
+  final_output = prefinal_output.drop_duplicates(subset='Location', keep="first")
   #print(second_df)
-  final_output.to_csv("qc_google_links.csv", index=False)
+  final_output.to_csv("Correct Google Links.csv.csv", index=False)
   
       
 if __name__ == '__main__':
