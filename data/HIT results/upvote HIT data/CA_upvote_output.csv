@@ -1,38 +1,38 @@
-,Location,Yes/Yes/Prefer,Yes/Yes/Not Prefer,Yes/Heard/Prefer,Yes/Heard/Not Prefer,Yes/No/Prefer,Yes/No/Not Prefer,No/Yes/Prefer,No/Yes/Not Prefer,No/Heard/Prefer,No/Heard/Not Prefer,No/No/Prefer,No/No/Not Prefer,Vote Tally
-0,"Beach Boys Historic Landmark, Hawthorne, California",0,0,0,0,1,1,1,0,1,0,1,0,-4.5
-1,"Indo Restaurant, Palo Alto, California",0,0,1,0,0,0,0,0,1,0,1,1,-1.5
-2,"Griffith Quarry Museum, Roseville, California",0,0,0,0,1,1,0,0,1,0,1,0,-1.5
-3,"Cedar Creek Pizza, Glenville, California",0,0,0,0,1,0,0,0,0,0,1,1,-0.5
-4,"Aztec Bowl, San Diego, California",1,0,0,0,1,0,0,0,1,0,1,1,0.5
-5,"Long Island Mike Pizza, San Diego, California",0,0,0,0,3,0,0,0,1,0,0,1,0.5
-6,"Benicia State Capitol Historic Park (Previous Capitol of California), Benicia, California",1,0,0,0,2,0,0,0,1,0,1,1,1.5
-7,"Off Street Cafe, Cerritos, California",1,0,0,0,2,0,0,0,1,0,1,1,1.5
-8,"Mo's Egg House, Temecula, California",0,0,1,0,1,0,0,0,0,0,1,1,1.5
-9,"Bijan Bakery, san jose, California",0,0,1,0,1,0,0,0,0,0,0,2,2.0
-10,"Asian Mll, Westminster, California",0,0,1,0,2,1,0,0,0,0,2,0,2.5
-11,"ECHO PARK, los angeles, California",2,0,1,0,0,0,1,0,1,0,0,0,3.0
-12,"Filoli, Woodside, California",0,0,0,0,3,0,0,0,0,0,0,0,3.0
-13,"Museum of Death, Los Angeles, California",1,0,1,0,1,0,0,0,0,0,2,1,3.5
-14,"Tour the city of Leh with local royalty, meet local monks",0,0,0,0,4,0,0,0,0,0,0,0,4.0
-15,"A hidden gem in my local area is Taco Nazo., Los Angeles, California",0,0,1,0,3,0,0,0,0,0,0,1,4.5
-16,"ECHO PARK, USA, California",1,0,1,0,0,0,0,0,0,0,0,0,5.0
-17,"CA, USA, California",2,0,0,0,0,0,0,0,0,0,0,0,6.0
-18,"Gilroy Gardens, Sunnyvale, California",0,0,1,0,4,0,0,0,0,0,0,0,6.0
-19,"WILDCAT CANYON REGIONAL PARK, RICHMOND, California",0,0,1,0,6,0,0,0,1,0,0,0,6.0
-20,"Six flags, Fairfield, California",1,0,2,0,0,0,0,0,0,0,1,0,6.0
-21,"San Pedro Square, San Jose, California",1,0,2,0,0,1,0,0,0,0,0,1,7.0
-22,"Griffith Park, Los Angeles, California",3,0,1,0,1,0,1,0,1,0,0,0,7.0
-23,"The Living Desert, Palm Desert, California",3,0,0,0,1,0,0,0,1,0,0,1,7.5
-24,"underground tour by sacramento history museum, sacramento, California",1,0,2,0,1,0,0,0,0,0,0,0,8.0
-25,"Spreckels Organ Pavilion, San Diego, California",2,0,1,0,1,0,0,0,0,0,0,1,8.5
-26,"Brea Redwood Grove, Yorba Linda, California",1,0,1,0,4,0,0,0,0,0,0,1,8.5
-27,"Fraizer Mountain, Los Angeles, California",1,0,1,0,3,1,0,0,0,0,0,0,8.5
-28,"Mono Lake, California, California",1,0,2,0,2,0,0,0,0,0,0,0,9.0
-29,"Upper Kern River, Johnsondale, California",0,0,2,0,5,0,0,0,0,0,0,0,9.0
-30,"San Bernandino County Museum, Big Bear City, California",2,0,1,0,2,0,0,0,0,0,0,0,10.0
-31,"Fullerton Arboretum, Placentia, California",2,0,2,0,1,0,0,0,0,0,0,0,11.0
-32,"Great Park Ballon Ride, Irvine, CA, California",2,0,2,0,1,0,0,0,0,0,0,0,11.0
-33,"Linda Falls, Napa, California, California",1,0,3,0,3,0,0,0,0,0,1,0,11.0
-34,"Observatory, Los Angelas, California",4,0,1,0,0,0,0,0,0,0,0,0,14.0
-35,"Lake Balboa/Anthony C. Beilenson Park, Los Angeles, California",2,0,0,0,8,0,0,0,0,0,0,0,14.0
-36,"Point Loma Lighthouse, San Diego, California",3,0,4,0,0,0,0,0,1,0,0,0,15.0
+,Location,Yes/Yes/Prefer,Yes/Yes/Not Prefer,Yes/Heard/Prefer,Yes/Heard/Not Prefer,Yes/No/Prefer,Yes/No/Not Prefer,No/Yes/Prefer,No/Yes/Not Prefer,No/Heard/Prefer,No/Heard/Not Prefer,No/No/Prefer,No/No/Not Prefer,Five Star
+0,"Beach Boys Historic Landmark, Hawthorne, California",0,0,0,0,1,1,1,0,1,0,1,0,1.25
+1,"Indo Restaurant, Palo Alto, California",0,0,1,0,0,0,0,0,1,0,1,1,1.429
+2,"Cedar Creek Pizza, Glenville, California",0,0,0,0,1,0,0,0,0,0,1,1,2.0
+3,"Griffith Quarry Museum, Roseville, California",0,0,0,0,1,1,0,0,1,0,1,0,2.143
+4,"Mo's Egg House, Temecula, California",0,0,1,0,1,0,0,0,0,0,1,1,2.857
+5,"Aztec Bowl, San Diego, California",1,0,0,0,1,0,0,0,1,0,1,1,2.917
+6,"ECHO PARK, los angeles, California",2,0,1,0,0,0,1,0,1,0,0,0,3.158
+7,"Asian Mll, Westminster, California",0,0,1,0,2,1,0,0,0,0,2,0,3.182
+8,"Benicia State Capitol Historic Park (Previous Capitol of California), Benicia, California",1,0,0,0,2,0,0,0,1,0,1,1,3.214
+9,"Off Street Cafe, Cerritos, California",1,0,0,0,2,0,0,0,1,0,1,1,3.214
+10,"Museum of Death, Los Angeles, California",1,0,1,0,1,0,0,0,0,0,2,1,3.214
+11,"Bijan Bakery, san jose, California",0,0,1,0,1,0,0,0,0,0,0,2,3.333
+12,"Long Island Mike Pizza, San Diego, California",0,0,0,0,3,0,0,0,1,0,0,1,3.333
+13,"Griffith Park, Los Angeles, California",3,0,1,0,1,0,1,0,1,0,0,0,3.654
+14,"Six flags, Fairfield, California",1,0,2,0,0,0,0,0,0,0,1,0,4.091
+15,"The Living Desert, Palm Desert, California",3,0,0,0,1,0,0,0,1,0,0,1,4.25
+16,"WILDCAT CANYON REGIONAL PARK, RICHMOND, California",0,0,1,0,6,0,0,0,1,0,0,0,4.375
+17,"A hidden gem in my local area is Taco Nazo., Los Angeles, California",0,0,1,0,3,0,0,0,0,0,0,1,4.444
+18,"Linda Falls, Napa, California, California",1,0,3,0,3,0,0,0,0,0,1,0,4.474
+19,"San Pedro Square, San Jose, California",1,0,2,0,0,1,0,0,0,0,0,1,4.545
+20,"Point Loma Lighthouse, San Diego, California",3,0,4,0,0,0,0,0,1,0,0,0,4.6
+21,"Spreckels Organ Pavilion, San Diego, California",2,0,1,0,1,0,0,0,0,0,0,1,4.667
+22,"Brea Redwood Grove, Yorba Linda, California",1,0,1,0,4,0,0,0,0,0,0,1,4.688
+23,"Upper Kern River, Johnsondale, California",0,0,2,0,5,0,0,0,0,0,0,0,5.0
+24,"Tour the city of Leh with local royalty, meet local monks",0,0,0,0,4,0,0,0,0,0,0,0,5.0
+25,"CA, USA, California",2,0,0,0,0,0,0,0,0,0,0,0,5.0
+26,"San Bernandino County Museum, Big Bear City, California",2,0,1,0,2,0,0,0,0,0,0,0,5.0
+27,"Gilroy Gardens, Sunnyvale, California",0,0,1,0,4,0,0,0,0,0,0,0,5.0
+28,"ECHO PARK, USA, California",1,0,1,0,0,0,0,0,0,0,0,0,5.0
+29,"Observatory, Los Angelas, California",4,0,1,0,0,0,0,0,0,0,0,0,5.0
+30,"Filoli, Woodside, California",0,0,0,0,3,0,0,0,0,0,0,0,5.0
+31,"Mono Lake, California, California",1,0,2,0,2,0,0,0,0,0,0,0,5.0
+32,"Fraizer Mountain, Los Angeles, California",1,0,1,0,3,1,0,0,0,0,0,0,5.0
+33,"Fullerton Arboretum, Placentia, California",2,0,2,0,1,0,0,0,0,0,0,0,5.0
+34,"Lake Balboa/Anthony C. Beilenson Park, Los Angeles, California",2,0,0,0,8,0,0,0,0,0,0,0,5.0
+35,"Great Park Ballon Ride, Irvine, CA, California",2,0,2,0,1,0,0,0,0,0,0,0,5.0
+36,"underground tour by sacramento history museum, sacramento, California",1,0,2,0,1,0,0,0,0,0,0,0,5.0

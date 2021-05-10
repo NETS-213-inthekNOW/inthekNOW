@@ -1,26 +1,26 @@
-,Location,Yes/Yes/Prefer,Yes/Yes/Not Prefer,Yes/Heard/Prefer,Yes/Heard/Not Prefer,Yes/No/Prefer,Yes/No/Not Prefer,No/Yes/Prefer,No/Yes/Not Prefer,No/Heard/Prefer,No/Heard/Not Prefer,No/No/Prefer,No/No/Not Prefer,Vote Tally
-0,"Park, Texas, Texas",2,0,0,0,2,0,0,0,0,0,4,0,4.0
-1,"The Jay Cafe, Texas, Texas",1,0,0,0,3,0,0,0,0,0,1,0,5.0
-2,"Bayou Burp Button, Houston, Texas",1,0,1,0,3,0,0,0,0,0,2,0,6.0
-3,"Buffalo Bayou, Houston, Texas",2,0,1,0,1,0,0,0,1,0,1,0,6.0
-4,"Desert Gardens, Texas, Texas",1,0,0,0,4,0,0,0,0,0,1,0,6.0
-5,"Menakshi Temple, Pearland, Texas",1,0,1,0,3,0,0,0,1,0,0,0,6.0
-6,"Samurai Collection, Dallas, Texas",1,0,0,0,4,0,0,0,0,0,0,1,6.5
-7,"Little Gretel Restaurant, Texas, Texas",1,0,0,0,4,0,0,0,0,0,0,0,7.0
-8,"Holiday Inn Lubbock South, Lubbock, Texas",2,0,2,0,1,0,0,0,1,0,1,0,8.0
-9,"Casa De Castillo, Waco, Texas",2,0,1,0,2,0,0,0,0,0,1,0,9.0
-10,"Chamizal National Memorial, El Paso, Texas",1,0,1,0,4,0,0,0,0,0,0,0,9.0
-11,"Le Bernardin, New York, Texas",1,0,2,0,3,0,0,0,0,0,1,0,9.0
-12,"Passport to Edan, Dallas, Texas",2,0,0,0,4,0,0,0,0,0,0,0,10.0
-13,"Airfield Falls, Weatherford, Texas",1,0,1,0,5,0,0,0,0,0,0,0,10.0
-14,"Koughan Memorial Water Tower Park, Round Rock, Texas",2,0,2,0,2,0,0,0,0,0,1,0,11.0
-15,"The Waterwall, Houston, Texas",2,0,2,0,2,0,0,0,0,0,0,0,12.0
-16,"Dallas Arboretum and Botanical Garden, Dallas, Texas",3,0,0,0,3,0,0,0,0,0,0,0,12.0
-17,"Carver Museum, Austin, Texas",3,0,1,0,3,0,0,0,0,0,1,0,13.0
-18,"Mount Bonnell, Texas, Texas",3,0,1,0,3,0,0,0,0,0,0,0,14.0
-19,"Japanese Garden, Houston, Texas",3,0,2,0,1,0,0,0,0,0,0,0,14.0
-20,"Puerto Vallarta Grill, El Paso, Texas",2,0,0,0,10,0,0,0,1,0,0,0,14.0
-21,"Reunion Tower, Dallas, Texas",4,0,0,0,2,0,0,0,0,0,0,0,14.0
-22,"McKinney Falls State Park, Austin, Texas",3,0,1,0,3,0,0,0,0,0,0,0,14.0
-23,"Winspear Opera House, Dallas, Texas",2,0,4,0,1,0,0,0,0,0,0,0,15.0
-24,"San Antonio River Walk, Texas, Texas",5,1,1,0,0,0,0,0,0,0,0,0,19.0
+,Location,Yes/Yes/Prefer,Yes/Yes/Not Prefer,Yes/Heard/Prefer,Yes/Heard/Not Prefer,Yes/No/Prefer,Yes/No/Not Prefer,No/Yes/Prefer,No/Yes/Not Prefer,No/Heard/Prefer,No/Heard/Not Prefer,No/No/Prefer,No/No/Not Prefer,Five Star
+0,"Park, Texas, Texas",2,0,0,0,2,0,0,0,0,0,4,0,3.182
+1,"Bayou Burp Button, Houston, Texas",1,0,1,0,3,0,0,0,0,0,2,0,3.824
+2,"Buffalo Bayou, Houston, Texas",2,0,1,0,1,0,0,0,1,0,1,0,3.889
+3,"Holiday Inn Lubbock South, Lubbock, Texas",2,0,2,0,1,0,0,0,1,0,1,0,4.0
+4,"The Jay Cafe, Texas, Texas",1,0,0,0,3,0,0,0,0,0,1,0,4.231
+5,"Desert Gardens, Texas, Texas",1,0,0,0,4,0,0,0,0,0,1,0,4.333
+6,"Menakshi Temple, Pearland, Texas",1,0,1,0,3,0,0,0,1,0,0,0,4.333
+7,"Le Bernardin, New York, Texas",1,0,2,0,3,0,0,0,0,0,1,0,4.412
+8,"Casa De Castillo, Waco, Texas",2,0,1,0,2,0,0,0,0,0,1,0,4.444
+9,"Koughan Memorial Water Tower Park, Round Rock, Texas",2,0,2,0,2,0,0,0,0,0,1,0,4.5
+10,"Carver Museum, Austin, Texas",3,0,1,0,3,0,0,0,0,0,1,0,4.6
+11,"Samurai Collection, Dallas, Texas",1,0,0,0,4,0,0,0,0,0,0,1,4.643
+12,"Puerto Vallarta Grill, El Paso, Texas",2,0,0,0,10,0,0,0,1,0,0,0,4.688
+13,"San Antonio River Walk, Texas, Texas",5,1,1,0,0,0,0,0,0,0,0,0,5.0
+14,"Passport to Edan, Dallas, Texas",2,0,0,0,4,0,0,0,0,0,0,0,5.0
+15,"Reunion Tower, Dallas, Texas",4,0,0,0,2,0,0,0,0,0,0,0,5.0
+16,"Airfield Falls, Weatherford, Texas",1,0,1,0,5,0,0,0,0,0,0,0,5.0
+17,"Little Gretel Restaurant, Texas, Texas",1,0,0,0,4,0,0,0,0,0,0,0,5.0
+18,"McKinney Falls State Park, Austin, Texas",3,0,1,0,3,0,0,0,0,0,0,0,5.0
+19,"The Waterwall, Houston, Texas",2,0,2,0,2,0,0,0,0,0,0,0,5.0
+20,"Japanese Garden, Houston, Texas",3,0,2,0,1,0,0,0,0,0,0,0,5.0
+21,"Dallas Arboretum and Botanical Garden, Dallas, Texas",3,0,0,0,3,0,0,0,0,0,0,0,5.0
+22,"Chamizal National Memorial, El Paso, Texas",1,0,1,0,4,0,0,0,0,0,0,0,5.0
+23,"Mount Bonnell, Texas, Texas",3,0,1,0,3,0,0,0,0,0,0,0,5.0
+24,"Winspear Opera House, Dallas, Texas",2,0,4,0,1,0,0,0,0,0,0,0,5.0
